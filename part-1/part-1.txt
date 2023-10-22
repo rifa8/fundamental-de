@@ -1,0 +1,33 @@
+1.Peran utama seorang data engineer dalam ekosistem data adalah untuk mengelola dan memproses data sehingga data tersebut dapat digunakan dengan efektif oleh perusahaan atau unit lain seperti data analyst dan data scientist.
+
+Perbedaan peran antara data engineer, data scientist dan data analyst:
+- Data engineer bertanggung jawab untuk mengumpulkan, membersihkan, mentransformasikan dan memproses data dari berbagai sumber. Mereka memastikan bahwa data tersedia dalam format yang tepat dan mudah diakses oleh data scientist dan data analyst.
+- Data scientist memiliki tanggung jawab dalam mengembangkan model, membuat prediksi, serta optimasi data menggunakan metode-metode seperti machine learning dan deep learning yang lebih advanced serta berkontribusi dalam membuat keputusan bisnis.
+- Data analyst berfokus pada pengambilan data yang ada dan menganalisisnya untuk memberikan wawasan bisnis yang cepat. Mereka membuat laporan, visualisasi data, dan mengidentifikasi tren yang dapat membantu perusahaan dalam pengambilan keputusan.
+
+2. Baik data engineer, data analyst, dan data scientist bekerja dengan data dalam konteks analitik data. Mereka semua bekerja untuk tujuan yang sama yaitu memahami data dan menggunakannya untuk membantu membuat keputusan bisnis. Kesamaan peran ketiganya dapat dilihat dari berbagai aspek seperti,
+Pemrosesan data:
+- Data Engineer: Memproses data mentah dari berbagai sumber, membersihkan data, dan menyiapkan data dalam format yang sesuai untuk analisis.
+- Data Scientist: Dalam beberapa kasus, data scientist juga perlu melakukan pemrosesan data awal sebelum menerapkan analisis lanjutan pada data.
+- Data Analyst: Pemrosesan data adalah bagian penting dari tugas data analyst untuk memastikan data yang digunakan dalam analisis sesuai dan dapat dipahami.
+
+Pengembangan data pipeline:
+- Data Engineer: Membangun dan memelihara pipeline untuk mengambil data dari berbagai sumber dan mengirimkannya ke sistem penyimpanan data.
+- Data Scientist: Dalam beberapa kasus, data scientist juga dapat terlibat dalam pengembangan pipa data untuk mengakses data yang dibutuhkan untuk proyek analisis mereka.
+- Data Analyst: Data analyst juga biasanya terlibat dalam pembangunan pipeline agar menghasilkan data yang mereka butuhkan.
+
+Pemahaman domain bisnis:
+- Data Engineer: Meskipun tidak selalu, data engineer yang memiliki pemahaman yang baik tentang domain bisnis dapat membantu dalam pengorganisasian dan pemrosesan data yang lebih relevan.
+- Data Scientist: Data scientist perlu memiliki pemahaman yang mendalam tentang domain bisnis untuk memahami konteks analisis data mereka dan menghasilkan insights yang bermanfaat.
+- Data Analyst: Data analyst harus memahami domain bisnis agar bisa menginterpretasikan hasil analisis data secara efektif dan memberikan insights yang berguna.
+
+3. Langkah - langkah proses ETL dan ELT
+ETL
+- Extract: Data engineer pertama-tama mengekstrak data mentah (raw data) dari berbagai sumber, seperti RDBMS, sistem eksternal, API, Excel, dsb. Kemudian data dipindahkan ke staging area.
+- Transform: Pada staging area, data engineer melakukan serangkaian transformasi untuk membersihkan, mengubah, dan menggabungkan data. Ini mencakup penghapusan data yang tidak valid, penggabungan data dari berbagai sumber, pengubahan format data, dan penghitungan data seperti agregasi dan perhitungan statistik.
+- Load: Setelah data diolah dan diubah sesuai kebutuhan, data engineer memuat data yang telah diolah ke dalam sistem penyimpanan data yang cocok, seperti data warehouse atau data lake. Data ini siap untuk digunakan oleh data analyst atau data scientist.
+
+ELT:
+- Extract: Sama seperti dalam ETL, data engineer mulai dengan mengekstrak data dari berbagai sumber.
+- Load: Kemudian data mentah tersebut langsung dimuat ke dalam sistem penyimpanan data, seperti data warehouse/data lake.
+- Transform: Setelah itu barulah data engineer melakukan transformasi dan pengolahan data mentah tersebut.

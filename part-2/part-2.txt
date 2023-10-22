@@ -1,0 +1,38 @@
+1. Relational database digunakan ketika:
+- jika tipe data adalah structured data
+- jika membutuhkan data untuk transaksi dengan kompleksitas tinggi dan integritas data yang ketat
+- jika skema database tidak berubah terlalu sering
+- jika sering melakukan operasi join untuk menggabungkan data dari beberapa tabel
+
+NoSQL database digunakan ketika:
+- jika tipe data adalah semi-structured data atau unstructured data
+- jika membutuhkan skalabilitas horizontal yang tinggi dan pertumbuhan data yang cepat
+- Jika skema data sering berubah-ubah atau ingin memiliki fleksibilitas dalam menambahkan dan menghapus kolom tanpa memerlukan perubahan skema global
+- Jika memiliki model data yang beragam seperti key-value, wide column, graph atau document
+
+2. Perbedaan antara database, data lake, data warehouse, dan data mart mencakup tujuan, struktur data dan jenis data yang disimpan.
+Database
+- Tujuan utama: Database digunakan untuk penyimpanan, pengambilan, pembaruan, dan penghapusan data dengan struktur yang terorganisir. Mereka cocok untuk aplikasi yang memerlukan keamanan dan konsistensi data tinggi.
+- Struktur Data: Data dalam database biasanya memiliki skema yang ketat dan terstruktur.
+- Jenis Data: Database umumnya digunakan untuk data transaksional dan operasional.
+- Contoh Database: MySQL, PostgreSQL, Oracle Database.
+
+Data Lake
+- Tujuan Utama: Data lake digunakan untuk menampung data mentah dalam berbagai format.
+- Struktur Data: Data lake umumnya memiliki struktur yang longgar atau bahkan tanpa skema. Data dapat dimasukkan ke dalam data lake tanpa memerlukan transformasi sebelumnya.
+- Jenis Data: Data mentah dalam bentuk structured data, semi-structured data, atau unstructured data yang akan dianalisis lebih lanjut.
+- Contoh Data Lake: Amazon S3, Hadoop HDFS, Azure Data Lake Storage.
+
+Data Warehouse:
+- Tujuan Utama: Data warehouse adalah penyimpanan data yang dirancang untuk analisis bisnis dan pelaporan. Ini digunakan untuk mengintegrasikan, membersihkan, dan mengoptimalkan data untuk analisis.
+- Struktur Data: Data dalam data warehouse biasanya terstruktur dan mematuhi skema yang ditentukan sebelumnya.
+- Jenis Data: Data warehouse digunakan untuk data historis dan agregat yang mendukung keputusan bisnis.
+- Contoh Data Warehouse: Amazon Redshift, Snowflake, Google BigQuery.
+
+Data Mart:
+- Tujuan Utama: Data mart adalah subset dari data warehouse yang berfokus pada area fungsional atau departemen tertentu dalam organisasi. Ini memungkinkan akses cepat dan analisis data yang relevan untuk unit bisnis tertentu.
+- Struktur Data: Data mart memiliki struktur data yang sesuai dengan kebutuhan unit bisnis yang diwakilinya.
+- Jenis Data: Data mart digunakan untuk data yang relevan dengan departemen atau unit bisnis tertentu.
+- Contoh Data Mart: Sales Data Mart, HR Data Mart, Finance Data Mart.
+
+3. Normalisasi database adalah proses desain basis data yang dilakukan untuk mengurangi redudansi data dan meminimalkan anomali yang mungkin terjadi dalam database. Tujuan utama normalisasi adalah memastikan bahwa data disimpan dengan cara yang meminimalkan duplikasi, sehingga menghasilkan struktur database yang lebih efisien dan konsisten. Normalisasi melibatkan pemisahan data menjadi tabel-tabel yang lebih kecil dan lebih terfokus, kemudian menghubungkan tabel-tabel tersebut dengan foreign keys untuk menghubungkan data yang berhubungan.
