@@ -1,3 +1,3 @@
 # In This Repo
 
-Fundamental of DE
+Fundamentals of Data Engineering
